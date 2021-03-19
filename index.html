@@ -27,12 +27,20 @@
       </button>
       <button id="remove-tasks" class="btn btn-block btn-delete">Delete All Tasks</button>
       <span class="oi oi-task display-1 text-center mb-2 d-none d-lg-block mt-auto"></span>
-      <p class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas architecto ipsa
-        excepturi aut non
-        laudantium sequi fugit officiis optio deleniti asperiores rem eius laborum maxime blanditiis culpa, quis iste?
-      </p>
+        <ul class="list-group list-group-flush d-none d-lg-block">
+          <li class="list-group-item bg-dark">Click <span class="bg-success">Add Task</span> to add a new task.</li>
+          <li class="list-group-item bg-dark">Click <span class="bg-danger">Delete All Tasks</span> to delete all tasks.</li>
+          <li class="list-group-item bg-dark">Drag tasks between columns to change their status.</li>
+          <li class="list-group-item bg-dark">Click on task name or date to edit them.</li>
+          <li class="list-group-item bg-dark">Drag tasks to the bottom to delete them.</li>
+        </ul>
     </header>
     <main class="col-12 col-lg-9 d-flex flex-column">
+
+      <div class="custom-control custom-switch d-flex flex-row-reverse">
+        <input type="checkbox" class="custom-control-input" id="darkMode">
+        <label class="custom-control-label text-info" for="darkMode"><h5>Dark Mode</h5></label>
+      </div>
 
       <div class="m-5 row justify-content-around">
 
